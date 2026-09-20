@@ -108,13 +108,13 @@ html[lang="ru"] .mission-content h2 { line-height: 1.08; }
 .form-feedback { color: var(--olive-light); font-size: 9px; line-height: 1.5; min-height: 14px; }
 .mission-stamp { align-self: end; border: 1px solid rgba(219,224,213,.25); color: var(--olive-light); font-family: var(--display); font-size: 36px; font-weight: 900; justify-self: end; line-height: .75; padding: 14px 12px 11px; transform: rotate(-8deg); }
 .mission-stamp small { font-family: var(--mono); font-size: 7px; letter-spacing: .1em; }
-.roster { background: var(--ink-soft); }
+.roster { background: var(--ink-soft); padding-top: 82px; }
 .roster-heading { align-items: end; display: flex; justify-content: space-between; }
 .roster-content { min-width: 0; }
 .online-readout { align-items: end; display: flex; gap: 7px; }
 .online-readout strong { color: var(--paper); font-family: var(--display); font-size: 37px; line-height: .8; }
 .online-readout small { color: var(--muted); font-size: 13px; letter-spacing: .1em; }
-.roster-grid { display: grid; gap: 18px; grid-template-columns: repeat(2, minmax(300px, 1fr)); margin-top: 42px; max-width: 1100px; }
+.roster-grid { display: grid; gap: 18px; grid-template-columns: repeat(2, minmax(300px, 1fr)); margin-top: 58px; max-width: 1100px; }
 .roster-card { background: #282e27; min-height: 300px; overflow: hidden; padding: 28px; position: relative; }
 .roster-card { transition: box-shadow .35s, transform .35s, border-color .35s; }
 .roster-card:hover, .roster-card:focus-within { border-color: rgba(237,38,63,.65); box-shadow: 0 18px 44px rgba(0,0,0,.32), 0 0 28px rgba(237,38,63,.18); transform: translateY(-7px); }
@@ -126,7 +126,7 @@ html[lang="ru"] .mission-content h2 { line-height: 1.08; }
 .card-online { color: var(--olive-light); font-size: 13px; position: absolute; right: 20px; text-transform: uppercase; top: 20px; }
 .card-online::before { background: #93a963; border-radius: 50%; content: ''; display: inline-block; height: 5px; margin: 0 5px 1px 0; width: 5px; }
 .card-name { font-family: var(--display); font-size: 34px; letter-spacing: .04em; text-align: center; text-transform: uppercase; }
-.card-role { color: var(--muted); font-size: 13px; letter-spacing: .09em; margin-top: 10px; text-align: center; text-transform: uppercase; }
+.card-role { color: var(--muted); font-size: 15px; letter-spacing: .09em; margin-top: 8px; text-align: center; text-transform: uppercase; transform: translateY(-3px); }
 .card-details { align-items: center; background: rgba(8,13,22,.9); bottom: 0; color: var(--paper-light); display: flex; font-size: 11px; justify-content: space-between; left: 0; opacity: 0; padding: 12px 20px; position: absolute; right: 0; transform: translateY(100%); transition: opacity .3s, transform .3s; }
 .roster-card:hover .card-details, .roster-card:focus-within .card-details { opacity: 1; transform: translateY(0); }
 .requirements { background: linear-gradient(135deg, rgba(16,27,41,.94), rgba(25,39,54,.91)); position: relative; }
@@ -217,7 +217,8 @@ html[lang="ru"] .mission-content h2 { line-height: 1.08; }
   .community-card strong { font-size: 13px; line-height: 1.1; }
   .community-card p { font-size: 14px; overflow-wrap: anywhere; }
   .roster-heading { align-items: start; flex-direction: column; gap: 22px; }
-  .roster-grid { grid-template-columns: repeat(2, 1fr); margin-top: 28px; }
+  .roster { padding-top: 52px; }
+  .roster-grid { grid-template-columns: repeat(2, 1fr); margin-top: 34px; }
   .roster-card { min-height: 148px; padding: 13px 9px; }
   .card-index { left: 13px; top: 14px; }
   .card-online { font-size: 7px; right: 13px; top: 14px; }
