@@ -45,7 +45,7 @@ button { font: inherit; }
 .hero-art { background: linear-gradient(90deg, rgba(7,11,19,.75), rgba(7,11,19,.1)), url('https://images.unsplash.com/photo-1519074069444-1ba4fff66d16?auto=format&fit=crop&w=1600&q=80') center / cover; display: block; inset: 0; opacity: .48; position: absolute; }
 .hero-overlay { background: linear-gradient(90deg, rgba(7, 11, 19, .97) 0%, rgba(7, 11, 19, .82) 43%, rgba(7, 11, 19, .2) 100%), linear-gradient(0deg, rgba(7,11,19,.2), transparent 45%); inset: 0; pointer-events: none; position: absolute; z-index: 1; }
 .hero-content, .hero-status, .hero-coordinate { position: relative; z-index: 2; }
-.eyebrow, .section-kicker { color: var(--orange); font-size: 10px; letter-spacing: .17em; margin: 0 0 21px; text-transform: uppercase; }
+.eyebrow, .section-kicker { color: var(--orange); font-size: 14px; letter-spacing: .12em; margin: 0 0 21px; text-transform: uppercase; }
 .eyebrow { align-items: center; display: flex; gap: 11px; justify-content: center; min-height: 16px; }
 .eyebrow-rule { background: var(--orange); display: block; flex: 0 0 28px; height: 1px; }
 .eyebrow-copy { display: block; line-height: 1.4; }
@@ -80,7 +80,7 @@ html[lang="ru"] .mission-content h2 { line-height: 1.08; }
 .community-card { align-items: flex-start; display: flex; gap: 12px; }
 .community-icon { color: var(--orange); font-size: 21px; line-height: 1; }
 .community-card strong { display: block; font-family: var(--display); font-size: 15px; letter-spacing: .04em; }
-.community-card p { color: #b7c0c4; font-size: 13px; line-height: 1.65; margin: 6px 0 0; }
+.community-card p { color: #b7c0c4; font-size: 16px; line-height: 1.65; margin: 6px 0 0; }
 .modal-backdrop { align-items: center; background: rgba(4,7,13,.82); display: flex; inset: 0; justify-content: center; padding: 20px; position: fixed; z-index: 15; }
 .modal-backdrop[hidden] { display: none; }
 .deployment-modal { background: #142335; border: 1px solid rgba(239,64,81,.5); box-shadow: 0 0 50px rgba(0,0,0,.45); max-width: 500px; padding: 30px; position: relative; width: 100%; }
@@ -101,7 +101,7 @@ html[lang="ru"] .mission-content h2 { line-height: 1.08; }
 .roster-content { min-width: 0; }
 .online-readout { align-items: end; display: flex; gap: 7px; }
 .online-readout strong { color: var(--paper); font-family: var(--display); font-size: 37px; line-height: .8; }
-.online-readout small { color: var(--muted); font-size: 8px; letter-spacing: .1em; }
+.online-readout small { color: var(--muted); font-size: 13px; letter-spacing: .1em; }
 .roster-grid { display: grid; gap: 18px; grid-template-columns: repeat(2, minmax(300px, 1fr)); max-width: 1100px; }
 .roster-card { background: #282e27; min-height: 300px; overflow: hidden; padding: 28px; position: relative; }
 .roster-card::before { border: 1px solid rgba(216,215,202,.12); content: ''; inset: 8px; pointer-events: none; position: absolute; }
@@ -109,7 +109,7 @@ html[lang="ru"] .mission-content h2 { line-height: 1.08; }
 .card-index { color: var(--orange); font-size: 9px; left: 20px; position: absolute; top: 19px; }
 .card-avatar { align-items: center; background: var(--olive); border-radius: 50%; color: var(--ink); display: flex; font-family: var(--display); font-size: 56px; font-weight: 800; height: 112px; justify-content: center; margin: 40px auto 24px; width: 112px; }
 .roster-card.officer .card-avatar { background: var(--orange); }
-.card-online { color: var(--olive-light); font-size: 8px; position: absolute; right: 20px; text-transform: uppercase; top: 20px; }
+.card-online { color: var(--olive-light); font-size: 13px; position: absolute; right: 20px; text-transform: uppercase; top: 20px; }
 .card-online::before { background: #93a963; border-radius: 50%; content: ''; display: inline-block; height: 5px; margin: 0 5px 1px 0; width: 5px; }
 .card-name { font-family: var(--display); font-size: 34px; letter-spacing: .04em; text-align: center; text-transform: uppercase; }
 .card-role { color: var(--muted); font-size: 13px; letter-spacing: .09em; margin-top: 10px; text-align: center; text-transform: uppercase; }
@@ -162,14 +162,14 @@ html[lang="ru"] .mission-content h2 { line-height: 1.08; }
   .language-toggle { flex: 0 0 auto; margin-left: auto; margin-right: 0; padding: 8px 5px; }
   .hero { min-height: 690px; padding: 168px 20px 80px; }
   .hero-clan-name { font-size: 11px; letter-spacing: .16em; }
-  .eyebrow { font-size: 8px; gap: 7px; letter-spacing: .1em; }
+  .eyebrow { font-size: 11px; gap: 7px; letter-spacing: .08em; }
   .eyebrow-rule { flex-basis: 18px; }
   h1 { font-size: clamp(2.2rem, 11vw, 3.25rem); letter-spacing: 0; line-height: 1; }
   html[lang="ru"] #hero-title { font-size: clamp(1.95rem, 9.5vw, 2.75rem); letter-spacing: 0; line-height: 1.06; max-width: 100%; overflow-wrap: anywhere; }
   html[lang="ru"] #hero-title em { display: inline-block; font-size: .74em; letter-spacing: 0; max-width: 100%; overflow-wrap: anywhere; }
   h2 { font-size: clamp(2rem, 9.5vw, 2.9rem); letter-spacing: 0; line-height: 1.04; }
   h3 { font-size: clamp(1.9rem, 8vw, 2.4rem); letter-spacing: 0; }
-  .hero-text, .body-copy { font-size: 14px; line-height: 1.7; }
+  .hero-text, .body-copy { font-size: 16px; line-height: 1.7; }
   .hero-actions { align-items: stretch; flex-direction: column; gap: 16px; max-width: 250px; }
   .hero-actions .button { width: 100%; }
   .hero-status { bottom: 63px; left: 24px; right: auto; }
@@ -182,7 +182,7 @@ html[lang="ru"] .mission-content h2 { line-height: 1.08; }
   .community-grid { grid-template-columns: 1fr; }
   .community-card { gap: 9px; }
   .community-card strong { font-size: 13px; line-height: 1.1; }
-  .community-card p { font-size: 8px; overflow-wrap: anywhere; }
+  .community-card p { font-size: 14px; overflow-wrap: anywhere; }
   .roster-heading { align-items: start; flex-direction: column; gap: 22px; }
   .roster-grid { grid-template-columns: repeat(2, 1fr); }
   .roster-card { min-height: 148px; padding: 13px 9px; }
