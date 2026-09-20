@@ -24,7 +24,7 @@ button { font: inherit; }
 .site-shell { overflow: hidden; position: relative; z-index: 1; }
 .site-header { align-items: center; background: rgba(8,13,22,.9); border-bottom: 1px solid rgba(219,224,213,.12); display: flex; height: 84px; justify-content: space-between; padding: 0 clamp(20px, 5vw, 78px); position: sticky; top: 0; width: 100%; z-index: 5; }
 .brand { align-items: center; display: flex; gap: 12px; }
-.brand-logo { height: 52px; object-fit: contain; width: 58px; }
+.brand-logo { height: 58px; object-fit: contain; width: 106px; }
 .brand-copy { display: flex; flex-direction: column; font-family: var(--display); line-height: .9; }
 .brand-copy strong { font-size: 23px; letter-spacing: .04em; }
 .brand-copy small { color: var(--olive-light); font-family: var(--mono); font-size: 7px; letter-spacing: .18em; margin-top: 7px; }
@@ -56,7 +56,7 @@ button { font: inherit; }
 .hero-art { background: linear-gradient(90deg, rgba(7,11,19,.75), rgba(7,11,19,.1)), url('https://images.unsplash.com/photo-1519074069444-1ba4fff66d16?auto=format&fit=crop&w=1600&q=80') center / cover; display: block; inset: 0; opacity: .48; position: absolute; }
 .hero-overlay { background: linear-gradient(90deg, rgba(7, 11, 19, .97) 0%, rgba(7, 11, 19, .82) 43%, rgba(7, 11, 19, .2) 100%), linear-gradient(0deg, rgba(7,11,19,.2), transparent 45%); inset: 0; pointer-events: none; position: absolute; z-index: 1; }
 .hero-content, .hero-status, .hero-coordinate { position: relative; z-index: 2; }
-.hero-logo { display: block; filter: drop-shadow(0 0 24px rgba(237,38,63,.38)); margin: -70px 0 24px; max-width: 300px; width: 32vw; }
+.hero-logo { display: block; filter: drop-shadow(0 0 24px rgba(237,38,63,.38)); margin: -70px 0 24px; max-width: 420px; width: 38vw; }
 .eyebrow, .section-kicker { color: var(--orange); font-size: 14px; letter-spacing: .12em; margin: 0 0 21px; text-transform: uppercase; }
 .eyebrow { align-items: center; display: flex; gap: 11px; justify-content: center; min-height: 16px; }
 .eyebrow-rule { background: var(--orange); display: block; flex: 0 0 28px; height: 1px; }
@@ -114,7 +114,7 @@ html[lang="ru"] .mission-content h2 { line-height: 1.08; }
 .online-readout { align-items: end; display: flex; gap: 7px; }
 .online-readout strong { color: var(--paper); font-family: var(--display); font-size: 37px; line-height: .8; }
 .online-readout small { color: var(--muted); font-size: 13px; letter-spacing: .1em; }
-.roster-grid { display: grid; gap: 18px; grid-template-columns: repeat(2, minmax(300px, 1fr)); max-width: 1100px; }
+.roster-grid { display: grid; gap: 18px; grid-template-columns: repeat(2, minmax(300px, 1fr)); margin-top: 42px; max-width: 1100px; }
 .roster-card { background: #282e27; min-height: 300px; overflow: hidden; padding: 28px; position: relative; }
 .roster-card { transition: box-shadow .35s, transform .35s, border-color .35s; }
 .roster-card:hover, .roster-card:focus-within { border-color: rgba(237,38,63,.65); box-shadow: 0 18px 44px rgba(0,0,0,.32), 0 0 28px rgba(237,38,63,.18); transform: translateY(-7px); }
@@ -182,7 +182,7 @@ html[lang="ru"] .mission-content h2 { line-height: 1.08; }
   .site-header { gap: 8px; height: 70px; padding: 0 14px; }
   .brand { flex-shrink: 1; min-width: 0; }
   .brand-copy { min-width: 0; }
-  .brand-logo { height: 40px; width: 42px; }
+  .brand-logo { height: 40px; width: 74px; }
   .brand-copy strong { font-size: 19px; white-space: nowrap; }
   .brand-copy small { font-size: 6px; letter-spacing: .1em; white-space: nowrap; }
   .desktop-nav { display: none; }
@@ -193,7 +193,7 @@ html[lang="ru"] .mission-content h2 { line-height: 1.08; }
   .button-discord .button-dot { display: none; }
   .language-toggle { flex: 0 0 auto; margin-left: auto; margin-right: 0; padding: 8px 5px; }
   .hero { min-height: 690px; padding: 168px 20px 80px; }
-  .hero-logo { margin: -42px 0 18px; max-width: 190px; width: 48vw; }
+  .hero-logo { margin: -42px 0 18px; max-width: 260px; width: 70vw; }
   .hero-clan-name { font-size: 11px; letter-spacing: .16em; }
   .eyebrow { font-size: 11px; gap: 7px; letter-spacing: .08em; }
   .eyebrow-rule { flex-basis: 18px; }
@@ -217,7 +217,7 @@ html[lang="ru"] .mission-content h2 { line-height: 1.08; }
   .community-card strong { font-size: 13px; line-height: 1.1; }
   .community-card p { font-size: 14px; overflow-wrap: anywhere; }
   .roster-heading { align-items: start; flex-direction: column; gap: 22px; }
-  .roster-grid { grid-template-columns: repeat(2, 1fr); }
+  .roster-grid { grid-template-columns: repeat(2, 1fr); margin-top: 28px; }
   .roster-card { min-height: 148px; padding: 13px 9px; }
   .card-index { left: 13px; top: 14px; }
   .card-online { font-size: 7px; right: 13px; top: 14px; }
