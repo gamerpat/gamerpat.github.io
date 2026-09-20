@@ -1,9 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Мой сайт</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Night Witches are a Squad clan built for night operations, disciplined teamwork, and clear comms.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self';">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>★TMNW★ | The Night Witches</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Привет, мир! Мой сайт работает.</h1>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="TMNW home">
+        <span class="brand-copy"><strong>★TMNW★</strong><small data-i18n="brandDivision">THE NIGHT WITCHES</small></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#about" data-i18n="navMission">Mission</a>
+        <a href="#roster" data-i18n="navRoster">Roster</a>
+        <a href="#join" data-i18n="navDeploy">Deploy</a>
+      </nav>
+      <button class="language-toggle" id="language-toggle" type="button" aria-label="Switch language"><span class="language-active">EN</span><span>RU</span></button>
+      <!-- INSERT YOUR DISCORD LINK HERE -->
+      <a class="button button-discord" href="https://discord.gg/Y8qFY7Y5JH" target="_blank" rel="noopener noreferrer">
+        <span class="button-dot"></span> <span data-i18n="discord">Discord</span>
+      </a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-overlay"></div>
+        <div class="hero-art" aria-hidden="true"></div>
+        <div class="hero-content reveal">
+          <p class="eyebrow"><span class="eyebrow-rule"></span><span class="eyebrow-copy" data-i18n="eyebrow">SQUAD // NIGHT OPERATIONS</span></p>
+          <p class="hero-clan-name" data-i18n="clanName">THE NIGHT WITCHES</p>
+          <h1 id="hero-title" class="lang" data-i18n="heroTitle" data-en="Night.<br><em>No limits.</em>" data-ru="Ночь.<br><em>Без границ.</em>">Night.<br><em>No limits.</em></h1>
+          <p class="hero-text" data-i18n="heroText">The Night Witches are a Squad clan for players who move quietly, communicate clearly, and own the objective before sunrise.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#join" id="deployment-trigger"><span data-i18n="heroCta">Request deployment</span> <span>↗</span></a>
+            <a class="text-link" href="#roster"><span data-i18n="heroRoster">View active roster</span> <span>↓</span></a>
+          </div>
+        </div>
+        <div class="hero-status" aria-label="Server status">
+          <span class="status-light"></span>
+          <span data-i18n="communityStatus">COMMUNITY STATUS</span><strong data-i18n="online">ONLINE</strong>
+        </div>
+        <div class="hero-coordinate">45° 25' 18" N &nbsp; / &nbsp; 75° 41' 27" W</div>
+      </section>
+
+      <section class="mission section-grid" id="about">
+        <div class="mission-content">
+          <p class="section-kicker" data-i18n="missionKicker">No spectators. No solo heroes.</p>
+          <h2 data-i18n="missionTitle">Fly quiet.<br><span>Strike together.</span></h2>
+          <p class="body-copy" data-i18n="missionText">TMNW is a night operations unit for players who want Squad to feel like Squad: organized enough to be effective, relaxed enough to be fun. We build every sortie around teamwork, good leadership, and the next objective.</p>
+          <div class="principles">
+            <div><span>01</span><strong data-i18n="principleOne">DISCIPLINE</strong><small data-i18n="principleOneText">Comms that keep the squad moving.</small></div>
+            <div><span>02</span><strong data-i18n="principleTwo">TRUST</strong><small data-i18n="principleTwoText">Good players make good teammates.</small></div>
+            <div><span>03</span><strong data-i18n="principleThree">ADAPTATION</strong><small data-i18n="principleThreeText">Every plan changes on contact.</small></div>
+          </div>
+          <div class="community-grid">
+            <article class="community-card">
+              <span class="community-icon">✦</span>
+              <div><strong data-i18n="serverTitle">HOME SERVER // BSS</strong><p data-i18n="serverText">Мир Дружба Жвачка is our home base. Play anywhere you like, then come back to familiar faces.</p></div>
+            </article>
+            <article class="community-card">
+              <span class="community-icon">☾</span>
+              <div><strong data-i18n="philosophyTitle">PLAY YOUR WAY</strong><p data-i18n="philosophyText">No mandatory daily logins, no forced seeding, and no military-style pressure. We play for fun.</p></div>
+            </article>
+            <article class="community-card">
+              <span class="community-icon">⌁</span>
+              <div><strong data-i18n="vipTitle">VIP AFTER FIRST SORTIE</strong><p data-i18n="vipText">Every active member receives a free VIP slot on BSS servers after joining us at least once.</p></div>
+            </article>
+            <article class="community-card">
+              <span class="community-icon">#</span>
+              <div><strong data-i18n="leaveTitle">TAKING LEAVE?</strong><p data-i18n="leaveText">Tell an officer in the #увал channel so you are not caught by periodic inactivity purges.</p></div>
+            </article>
+          </div>
+        </div>
+        <div class="mission-stamp">TMNW<br><small>EST. 2024</small></div>
+      </section>
+
+      <section class="roster section-grid" id="roster">
+        <div class="roster-content">
+          <div class="roster-heading">
+            <div><p class="section-kicker" data-i18n="deploymentKicker">Current deployment</p><h2 data-i18n="rosterTitle">Meet the <span>unit.</span></h2></div>
+            <div class="online-readout"><span class="status-light"></span><strong id="online-count">04</strong><small data-i18n="onlineNow">ONLINE NOW</small></div>
+          </div>
+          <div class="filter-bar" role="group" aria-label="Filter roster" data-i18n-aria="filterRoster">
+            <button class="filter-button active" data-filter="all" type="button"><span data-i18n="filterAll">All</span> <span data-filter-count="all">30</span></button>
+            <button class="filter-button" data-filter="officer" type="button"><span data-i18n="filterOfficers">Officers</span> <span data-filter-count="officer">08</span></button>
+            <button class="filter-button" data-filter="infantry" type="button"><span data-i18n="filterInfantry">Infantry</span> <span data-filter-count="infantry">22</span></button>
+          </div>
+          <div class="roster-grid" id="roster-grid"></div>
+        </div>
+      </section>
+
+      <section class="operations section-grid">
+        <div class="operations-content">
+          <div class="counter-panel">
+            <div class="counter-panel-top"><span data-i18n="ranksEyebrow">CLAN RANKS</span><span class="pulse">● <span data-i18n="activeNow">ACTIVE</span></span></div>
+            <h3 data-i18n="ranksTitle">Ranks of<br>the coven</h3>
+            <p data-i18n="ranksText">Recognition earned through teamwork, experience, and service to the clan.</p>
+            <div class="rank-list" id="rank-list"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="join section-grid" id="join">
+        <div class="join-content">
+          <p class="section-kicker" data-i18n="joinKicker">Your fireteam is waiting.</p>
+          <h2 data-i18n="joinTitle">Ready to<br><span>deploy?</span></h2>
+          <p class="body-copy" data-i18n="joinText">Bring your best comms, your worst jokes, and a willingness to play the objective. New recruits and seasoned SLs are both welcome.</p>
+          <!-- INSERT YOUR DISCORD LINK HERE -->
+          <a class="button button-primary" href="https://discord.gg/Y8qFY7Y5JH" target="_blank" rel="noopener noreferrer"><span data-i18n="joinCta">Enter the Discord</span> <span>↗</span></a>
+        </div>
+        <div class="join-aside"><span>TMNW-04</span><strong data-i18n="joinAside">ALL SQUADS<br>FORM UP HERE</strong><small data-i18n="joinAsideSmall">VOICE // COMMS // COMMUNITY</small></div>
+      </section>
+    </main>
+
+    <div class="modal-backdrop" id="deployment-modal" hidden>
+      <section class="deployment-modal" role="dialog" aria-modal="true" aria-labelledby="deployment-title">
+        <button class="modal-close" id="modal-close" type="button" aria-label="Close">×</button>
+        <p class="section-kicker" data-i18n="formKicker">OPEN CHANNEL</p><h2 id="deployment-title" data-i18n="formTitle">Request<br><span>deployment.</span></h2>
+        <p class="modal-copy" data-i18n="formText">Tell the officers a little about your play style. This demo validates locally; connect it to an HTTPS backend before collecting real submissions.</p>
+        <form id="deployment-form" novalidate>
+          <label><span data-i18n="steamLabel">Steam ID</span><input name="steam" required maxlength="32" pattern="[0-9A-Za-z_ -]+"></label>
+          <label><span data-i18n="hoursLabel">Squad hours</span><input name="hours" type="number" min="0" max="50000" required></label>
+          <label><span data-i18n="roleLabel">Role preference</span><select name="role"><option data-i18n="roleInfantry">Infantry</option><option data-i18n="roleOfficer">Officer</option><option data-i18n="roleMedic">Medic</option></select></label>
+          <label><span data-i18n="discordTagLabel">Discord tag</span><input name="discord" required maxlength="64" pattern="[0-9A-Za-z_.# -]+"></label>
+          <button class="button button-primary" type="submit" data-i18n="formSubmit">Send request</button><p id="form-feedback" class="form-feedback" role="status"></p>
+        </form>
+      </section>
+    </div>
+
+    <footer class="site-footer">
+      <span>★TMNW★ // <span data-i18n="footerDivision">THE NIGHT WITCHES</span></span><span data-i18n="footerTagline">BUILT FOR THE OBJECTIVE</span><a href="#top" data-i18n="backToTop">BACK TO TOP ↑</a>
+    </footer>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
