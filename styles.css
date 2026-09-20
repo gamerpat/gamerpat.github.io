@@ -24,7 +24,7 @@ button { font: inherit; }
 .site-shell { overflow: hidden; position: relative; z-index: 1; }
 .site-header { align-items: center; background: rgba(8,13,22,.9); border-bottom: 1px solid rgba(219,224,213,.12); display: flex; height: 84px; justify-content: space-between; padding: 0 clamp(20px, 5vw, 78px); position: sticky; top: 0; width: 100%; z-index: 5; }
 .brand { align-items: center; display: flex; gap: 12px; }
-.brand-logo { height: 58px; object-fit: contain; width: 106px; }
+.brand-logo { background: var(--ink); height: 58px; object-fit: cover; object-position: center; width: 106px; }
 .brand-copy { display: flex; flex-direction: column; font-family: var(--display); line-height: .9; }
 .brand-copy strong { font-size: 23px; letter-spacing: .04em; }
 .brand-copy small { color: var(--olive-light); font-family: var(--mono); font-size: 7px; letter-spacing: .18em; margin-top: 7px; }
@@ -56,7 +56,7 @@ button { font: inherit; }
 .hero-art { background: linear-gradient(90deg, rgba(7,11,19,.75), rgba(7,11,19,.1)), url('https://images.unsplash.com/photo-1519074069444-1ba4fff66d16?auto=format&fit=crop&w=1600&q=80') center / cover; display: block; inset: 0; opacity: .48; position: absolute; }
 .hero-overlay { background: linear-gradient(90deg, rgba(7, 11, 19, .97) 0%, rgba(7, 11, 19, .82) 43%, rgba(7, 11, 19, .2) 100%), linear-gradient(0deg, rgba(7,11,19,.2), transparent 45%); inset: 0; pointer-events: none; position: absolute; z-index: 1; }
 .hero-content, .hero-status, .hero-coordinate { position: relative; z-index: 2; }
-.hero-logo { display: block; filter: drop-shadow(0 0 24px rgba(237,38,63,.38)); margin: -70px 0 24px; max-width: 420px; width: 38vw; }
+.hero-logo { background: var(--ink); display: block; filter: drop-shadow(0 0 24px rgba(237,38,63,.38)); margin: -70px 0 24px; max-width: 420px; object-fit: cover; object-position: center; width: 38vw; }
 .eyebrow, .section-kicker { color: var(--orange); font-size: 14px; letter-spacing: .12em; margin: 0 0 21px; text-transform: uppercase; }
 .eyebrow { align-items: center; display: flex; gap: 11px; justify-content: center; min-height: 16px; }
 .eyebrow-rule { background: var(--orange); display: block; flex: 0 0 28px; height: 1px; }
