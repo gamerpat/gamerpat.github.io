@@ -1,8 +1,8 @@
-"""Minimal production-friendly host for the TMNW static site."""
-
 from __future__ import annotations
 
 import os
+import json
+from urllib.request import Request, urlopen
 from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -27,6 +27,26 @@ class SiteHandler(SimpleHTTPRequestHandler):
             "camera=(), microphone=(), geolocation=(), payment=()",
         )
         super().end_headers()
+
+    def do_POST(self) -> None:
+        if self.path != "/api/apply":
+            self.send_error(404)
+            return
+        webhook = os.environ.get("DISCORD_WEBHOOK_URL")
+        if not webhook:
+            self.send_error(503, "Application endpoint is not configured")
+            return
+        try:
+            length = int(self.headers.get("Content-Length", "0"))
+            data = json.loads(self.rfile.read(length))
+            content = "New TMNW application\\n" + "\\n".join(f"{key}: {value}" for key, value in data.items())
+            request = Request(webhook, data=json.dumps({"content": content}).encode(), headers={"Content-Type": "application/json"}, method="POST")
+            with urlopen(request, timeout=10):
+                pass
+            self.send_response(204)
+            self.end_headers()
+        except (ValueError, OSError, json.JSONDecodeError):
+            self.send_error(502, "Could not deliver application")
 
     def log_message(self, format_string: str, *args: object) -> None:
         print(f"{self.address_string()} - {format_string % args}")
