@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
@@ -7,11 +7,11 @@
   <meta property="og:title" content="★TMNW★ — Ночные ведьмы / Squad">
   <meta property="og:description" content="Казуальный Squad-клан: ясная связь, совместные вылеты и без военного давления.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1519074069444-1ba4fff66d16?auto=format&fit=crop&w=1600&q=80">
+  <meta property="og:image" content="tmnw-logo.svg">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self';">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>★TMNW★ | The Night Witches</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23080d16'/%3E%3Cpath d='M10 47 32 9l22 38-22-12Z' fill='%23ed263f'/%3E%3C/svg%3E">
+  <link rel="icon" href="tmnw-logo.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -21,6 +21,7 @@
   <div class="site-shell">
     <header class="site-header">
       <a class="brand" href="#top" aria-label="TMNW home">
+        <img class="brand-logo" src="tmnw-logo.svg" alt="TMNW">
         <span class="brand-copy"><strong>★TMNW★</strong><small data-i18n="brandDivision">THE NIGHT WITCHES</small></span>
       </a>
       <nav class="desktop-nav" id="main-navigation" aria-label="Main navigation">
@@ -37,9 +38,11 @@
 
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
+        <div class="atmosphere" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
         <div class="hero-overlay"></div>
         <div class="hero-art" aria-hidden="true"></div>
         <div class="hero-content reveal">
+          <img class="hero-logo" src="tmnw-logo.svg" alt="Team Night Witches">
           <p class="eyebrow"><span class="eyebrow-rule"></span><span class="eyebrow-copy" data-i18n="eyebrow">SQUAD // NIGHT OPERATIONS</span></p>
           <p class="hero-clan-name" data-i18n="clanName">THE NIGHT WITCHES</p>
           <h1 id="hero-title" class="lang" data-i18n="heroTitle" data-en="Night.<br><em>No limits.</em>" data-ru="Ночь.<br><em>Без границ.</em>">Night.<br><em>No limits.</em></h1>
@@ -56,30 +59,30 @@
         <div class="hero-coordinate" data-i18n="heroLocation">МИР ДРУЖБА ЖВАЧКА // BSS</div>
       </section>
 
-      <section class="mission section-grid" id="about">
+      <section class="mission section-grid reveal-on-scroll" id="about">
         <div class="mission-content">
           <p class="section-kicker" data-i18n="missionKicker">No spectators. No solo heroes.</p>
           <h2 data-i18n="missionTitle">Fly quiet.<br><span>Strike together.</span></h2>
           <p class="body-copy" data-i18n="missionText">TMNW is a night operations unit for players who want Squad to feel like Squad: organized enough to be effective, relaxed enough to be fun. We build every sortie around teamwork, good leadership, and the next objective.</p>
-          <div class="principles">
+          <div class="principles reveal-on-scroll">
             <div><span>01</span><strong data-i18n="principleOne">DISCIPLINE</strong><small data-i18n="principleOneText">Comms that keep the squad moving.</small></div>
             <div><span>02</span><strong data-i18n="principleTwo">TRUST</strong><small data-i18n="principleTwoText">Good players make good teammates.</small></div>
             <div><span>03</span><strong data-i18n="principleThree">ADAPTATION</strong><small data-i18n="principleThreeText">Every plan changes on contact.</small></div>
           </div>
           <div class="community-grid">
-            <article class="community-card">
+            <article class="community-card reveal-on-scroll">
               <span class="community-icon">✦</span>
               <div><strong data-i18n="serverTitle">HOME SERVER // BSS</strong><p data-i18n="serverText">Мир Дружба Жвачка is our home base. Play anywhere you like, then come back to familiar faces.</p></div>
             </article>
-            <article class="community-card">
+            <article class="community-card reveal-on-scroll">
               <span class="community-icon">☾</span>
               <div><strong data-i18n="philosophyTitle">PLAY YOUR WAY</strong><p data-i18n="philosophyText">No mandatory daily logins, no forced seeding, and no military-style pressure. We play for fun.</p></div>
             </article>
-            <article class="community-card">
+            <article class="community-card reveal-on-scroll">
               <span class="community-icon">⌁</span>
               <div><strong data-i18n="vipTitle">VIP AFTER FIRST SORTIE</strong><p data-i18n="vipText">Every active member receives a free VIP slot on BSS servers after joining us at least once.</p></div>
             </article>
-            <article class="community-card">
+            <article class="community-card reveal-on-scroll">
               <span class="community-icon">#</span>
               <div><strong data-i18n="leaveTitle">TAKING LEAVE?</strong><p data-i18n="leaveText">Tell an officer in the #увал channel so you are not caught by periodic inactivity purges.</p></div>
             </article>
@@ -88,7 +91,7 @@
         <div class="mission-stamp">TMNW<br><small>EST. 2024</small></div>
       </section>
 
-      <section class="roster section-grid" id="roster">
+      <section class="roster section-grid reveal-on-scroll" id="roster">
         <div class="roster-content">
           <div class="roster-heading">
             <div><p class="section-kicker" data-i18n="deploymentKicker">Current deployment</p><h2 data-i18n="rosterTitle">Meet the <span>unit.</span></h2></div>
@@ -98,7 +101,24 @@
         </div>
       </section>
 
-      <section class="join section-grid" id="join">
+      <section class="requirements section-grid reveal-on-scroll" id="requirements">
+        <div class="requirements-content">
+          <p class="section-kicker" data-i18n="requirementsKicker">Before the first sortie</p>
+          <h2 data-i18n="requirementsTitle">No gatekeeping.<br><span>Just the basics.</span></h2>
+          <p class="body-copy" data-i18n="requirementsText">We want reliable teammates, not perfect soldiers. These are the only things we ask before joining a regular squad.</p>
+          <div class="requirement-grid">
+            <article class="requirement-card"><strong>100+</strong><span data-i18n="hoursRequirement">hours in Squad</span></article>
+            <article class="requirement-card"><strong>16+</strong><span data-i18n="ageRequirement">years old</span></article>
+            <article class="requirement-card"><strong data-i18n="micRequirement">MIC</strong><span data-i18n="micRequirementText">able to communicate in squad</span></article>
+          </div>
+          <p class="requirement-note" data-i18n="exceptionRequirement">Sometimes we make an exception for a good fit. Talk to an officer in Discord.</p>
+          <div class="role-list" aria-label="Squad roles">
+            <span data-i18n="roleRifleman">Rifleman</span><span data-i18n="roleMedic">Medic</span><span data-i18n="roleBugler">Bugler</span><span data-i18n="roleGrenadier">Grenadier</span><span data-i18n="roleSniper">Sniper</span><span data-i18n="roleSquadLead">Squad lead</span><span data-i18n="roleTandem">Tandem</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="join section-grid reveal-on-scroll" id="join">
         <div class="join-content">
           <p class="section-kicker" data-i18n="joinKicker">Your fireteam is waiting.</p>
           <h2 data-i18n="joinTitle">Ready to<br><span>deploy?</span></h2>
@@ -139,4 +159,3 @@
   <script src="script.js?v=3"></script>
 </body>
 </html>
-
