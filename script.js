@@ -1,6 +1,13 @@
 const roster = [
   { name: 'KisEspander', roles: { en: 'Officer', ru: 'Офицер' }, badge: { en: 'OFFICER', ru: 'ОФИЦЕР' }, type: 'officer' },
-  { name: 'Balista', roles: { en: 'Deputy commander', ru: 'Заместитель командира' }, badge: { en: 'DEPUTY COMMANDER', ru: 'ЗАМЕСТИТЕЛЬ КОМАНДИРА' }, type: 'officer' }
+  { name: 'Balista', roles: { en: 'Deputy commander', ru: 'Заместитель командира' }, badge: { en: 'DEPUTY COMMANDER', ru: 'ЗАМЕСТИТЕЛЬ КОМАНДИРА' }, type: 'officer' },
+  { name: 'Prizrak', roles: { en: 'Officer', ru: 'Офицер' }, badge: { en: 'OFFICER', ru: 'ОФИЦЕР' }, type: 'officer' },
+  { name: 'Водочка', roles: { en: 'Officer', ru: 'Офицер' }, badge: { en: 'OFFICER', ru: 'ОФИЦЕР' }, type: 'officer' },
+  { name: 'Gooidovich2003', roles: { en: 'Officer', ru: 'Офицер' }, badge: { en: 'OFFICER', ru: 'ОФИЦЕР' }, type: 'officer' },
+  { name: 'kINSEL', roles: { en: 'Officer', ru: 'Офицер' }, badge: { en: 'OFFICER', ru: 'ОФИЦЕР' }, type: 'officer' },
+  { name: 'Space World', roles: { en: 'Officer', ru: 'Офицер' }, badge: { en: 'OFFICER', ru: 'ОФИЦЕР' }, type: 'officer' },
+  { name: 'Buran', roles: { en: 'Officer', ru: 'Офицер' }, badge: { en: 'OFFICER', ru: 'ОФИЦЕР' }, type: 'officer' },
+  { name: 'KissRoust', roles: { en: 'Officer', ru: 'Офицер' }, badge: { en: 'OFFICER', ru: 'ОФИЦЕР' }, type: 'officer' }
 ];
 
 const copy = {
