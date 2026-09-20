@@ -1,10 +1,6 @@
 const roster = [
-  { name: 'KisEspander', roles: { en: 'Clan lead', ru: 'Командир' }, type: 'officer', online: true },
-  { name: 'Balista', roles: { en: 'Deputy lead', ru: 'Заместитель' }, type: 'officer', online: true },
-  { name: 'Rook', roles: { en: 'Rifleman', ru: 'Стрелок' }, type: 'infantry', online: true },
-  { name: 'Mako', roles: { en: 'Medic', ru: 'Медик' }, type: 'infantry', online: true },
-  { name: 'Vex', roles: { en: 'Automatic Rifleman', ru: 'Пулемётчик' }, type: 'infantry', online: false },
-  { name: 'Havoc', roles: { en: 'Rifleman', ru: 'Стрелок' }, type: 'infantry', online: false }
+  { name: 'KisEspander', roles: { en: 'Clan lead', ru: 'Глава клана' }, type: 'officer' },
+  { name: 'Balista', roles: { en: 'Deputy lead', ru: 'Заместитель главы' }, type: 'officer' }
 ];
 
 const copy = {
@@ -35,16 +31,7 @@ Object.assign(copy.ru, {
   formKicker: 'ОТКРЫТЫЙ КАНАЛ', formTitle: 'Запросить<br><span>вылет.</span>', formText: 'Заявка уходит офицерам прямо в Discord. Расскажи главное, и мы подберём время для первого вылета.', nameLabel: 'Ник в игре', steamLabel: 'Steam ID <small>64-bit или ссылка на профиль</small>', hoursLabel: 'Часы в Squad', roleLabel: 'Предпочтительная роль', roleInfantry: 'Пехота', roleOfficer: 'Офицер', roleMedic: 'Медик', discordTagLabel: 'Имя пользователя Discord', micLabel: 'Микрофон', micYes: 'Есть, могу говорить', micSometimes: 'Иногда без микрофона', primeLabel: 'Прайм-тайм (МСК)', formSubmit: 'Отправить заявку', formSuccess: 'Заявка отправлена. Следующий шаг будет в Discord.', formInvalid: 'Заполни все поля корректно.', formError: 'Не удалось отправить заявку. Зайди в Discord и напиши офицеру.', copiedToast: 'IP сервера скопирован.'
 });
 
-const ranks = [
-  { code: '[NEW]', en: 'New member', ru: 'Новый участник' },
-  { code: '[PLY]', en: 'Regular player', ru: 'Постоянный игрок' },
-  { code: '[SL]', en: 'Squad lead', ru: 'Лидер отряда' },
-  { code: '[MOD]', en: 'Community helper', ru: 'Помощник сообщества' },
-  { code: '[CMD]', en: 'Clan coordinator', ru: 'Координатор клана' }
-];
-
 const rosterGrid = document.querySelector('#roster-grid');
-const filters = document.querySelectorAll('.filter-button');
 const languageToggle = document.querySelector('#language-toggle');
 const deploymentModal = document.querySelector('#deployment-modal');
 const deploymentTrigger = document.querySelector('#deployment-trigger');
@@ -71,43 +58,21 @@ function renderRoster(filter = 'all') {
   `).join('');
 }
 
-function renderRanks() {
-  document.querySelector('#rank-list').innerHTML = ranks.map((rank) => `
-    <div class="rank-row">
-      <strong>${rank.code}</strong><span>${rank[language]}</span>
-    </div>
-  `).join('');
-}
-
 function applyLanguage() {
   document.documentElement.lang = language;
   document.querySelectorAll('[data-i18n]').forEach((element) => {
-    element.innerHTML = copy[language][element.dataset.i18n];
+    element.innerHTML = copy[language][element.dataset.i18n] ?? element.dataset.i18n;
   });
   document.querySelectorAll('[data-i18n-aria]').forEach((element) => {
     element.setAttribute('aria-label', copy[language][element.dataset.i18nAria]);
   });
   languageToggle.innerHTML = language === 'en' ? '<span class="language-active">EN</span><span>RU</span>' : '<span>EN</span><span class="language-active">RU</span>';
-  renderRoster(document.querySelector('.filter-button.active').dataset.filter);
-  renderRanks();
+  renderRoster();
 }
 
 function updateCounters() {
-  const officers = roster.filter((member) => member.type === 'officer').length;
-  const infantry = roster.filter((member) => member.type === 'infantry').length;
   document.querySelector('#member-count').textContent = formatNumber(roster.length);
-  document.querySelector('[data-filter-count="all"]').textContent = formatNumber(roster.length);
-  document.querySelector('[data-filter-count="officer"]').textContent = formatNumber(officers);
-  document.querySelector('[data-filter-count="infantry"]').textContent = formatNumber(infantry);
 }
-
-filters.forEach((button) => {
-  button.addEventListener('click', () => {
-    filters.forEach((filterButton) => filterButton.classList.remove('active'));
-    button.classList.add('active');
-    renderRoster(button.dataset.filter);
-  });
-});
 
 languageToggle.addEventListener('click', () => {
   language = language === 'en' ? 'ru' : 'en';
