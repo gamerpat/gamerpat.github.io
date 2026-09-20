@@ -9,7 +9,7 @@ const copy = {
     eyebrow: 'SQUAD // NIGHT OPERATIONS', heroTitle: 'Night.<br><em>No limits.</em>', heroText: 'The Night Witches are a Squad clan for players who move quietly, communicate clearly, and own the objective before sunrise.', heroCta: 'Request deployment', heroRoster: 'View active roster', homeServerLabel: 'HOME SERVER', heroLocation: 'МИР ДРУЖБА ЖВАЧКА // BSS',
     missionLabel: 'MISSION BRIEF', missionKicker: 'No spectators. No solo heroes.', missionTitle: 'Fly quiet.<br><span>Strike together.</span>', missionText: 'TMNW is a night operations unit for players who want Squad to feel like Squad: organized enough to be effective, relaxed enough to be fun. We build every sortie around teamwork, good leadership, and the next objective.', principleOne: 'DISCIPLINE', principleOneText: 'Comms that keep the squad moving.', principleTwo: 'TRUST', principleTwoText: 'Good players make good teammates.', principleThree: 'ADAPTATION', principleThreeText: 'Every plan changes on contact.', serverTitle: 'HOME SERVER // BSS', serverText: 'Мир Дружба Жвачка is our home base. Play anywhere you like, then come back to familiar faces.', philosophyTitle: 'PLAY YOUR WAY', philosophyText: 'No mandatory daily logins, no forced seeding, and no military-style pressure. We play for fun.', vipTitle: 'VIP AFTER FIRST SORTIE', vipText: 'Every active member receives a free VIP slot on BSS servers after joining us at least once.', leaveTitle: 'TAKING LEAVE?', leaveText: 'Tell an officer in the #увал channel so you are not caught by periodic inactivity purges.',
     personnelLabel: 'PERSONNEL', active: 'ACTIVE', activeNow: 'ACTIVE', deploymentKicker: 'Verified members', rosterTitle: 'Our <span>crew.</span>', memberCount: 'ACTIVE MEMBERS', leadCard: 'LEAD', memberCard: 'MEMBER', filterRoster: 'Filter roster', filterAll: 'All', filterOfficers: 'Leads', filterInfantry: 'Players',
-    ranksEyebrow: 'HOW WE PLAY', activeNow: 'ACTIVE', ranksTitle: 'How we<br>play together', ranksText: 'A short path from first sortie to helping the squad. No parade-ground hierarchy.',
+    requirementsKicker: 'Before the first sortie', requirementsTitle: 'No gatekeeping.<br><span>Just the basics.</span>', requirementsText: 'We want reliable teammates, not perfect soldiers. These are the only things we ask before joining a regular squad.', hoursRequirement: 'hours in Squad', ageRequirement: 'years old', micRequirement: 'MIC', micRequirementText: 'able to communicate in squad', exceptionRequirement: 'Sometimes we make an exception for a good fit. Talk to an officer in Discord.', roleRifleman: 'Rifleman', roleMedic: 'Medic', roleBugler: 'Bugler', roleGrenadier: 'Grenadier', roleSniper: 'Sniper', roleSquadLead: 'Squad lead', roleTandem: 'Tandem',
     openChannel: 'OPEN CHANNEL', joinKicker: 'Your fireteam is waiting.', joinTitle: 'Ready to<br><span>deploy?</span>', joinText: 'Bring your best comms, your worst jokes, and a willingness to play the objective. New recruits and seasoned SLs are both welcome.', stepOne: 'Join the Discord and say hello.', stepTwo: 'Send the short application below.', stepThree: 'Pick a first sortie with the crew.', joinCta: 'Enter the Discord', joinAside: 'ALL SQUADS<br>FORM UP HERE', joinAsideSmall: 'VOICE // COMMS // COMMUNITY', footerDivision: 'THE NIGHT WITCHES', footerTagline: 'BUILT FOR THE OBJECTIVE', backToTop: 'BACK TO TOP ↑', onlineCard: 'Online', standbyCard: 'Standby'
   },
   ru: {
@@ -17,7 +17,7 @@ const copy = {
     eyebrow: 'SQUAD // НОЧНЫЕ ОПЕРАЦИИ', heroTitle: 'Ночь.<br><em>Без границ.</em>', heroText: '«Команда Ночных Ведьм» — клан Squad для тех, кто двигается тихо, говорит чётко и берёт цель до рассвета.', heroCta: 'Запросить вылет', heroRoster: 'Смотреть состав', homeServerLabel: 'ДОМАШНИЙ СЕРВЕР', heroLocation: 'МИР ДРУЖБА ЖВАЧКА // BSS',
     missionLabel: 'БРИФИНГ МИССИИ', missionKicker: 'Без зрителей. Без одиночек.', missionTitle: 'Летим тихо.<br><span>Бьём вместе.</span>', missionText: 'TMNW — подразделение ночных операций для тех, кто хочет играть в Squad как в Squad: организованно и эффективно, но без потери удовольствия. Каждый вылет строится на командной работе, лидерстве и следующей цели.', principleOne: 'ДИСЦИПЛИНА', principleOneText: 'Связь, которая ведёт отряд вперёд.', principleTwo: 'ДОВЕРИЕ', principleTwoText: 'Хорошие игроки делают хороших напарников.', principleThree: 'ГИБКОСТЬ', principleThreeText: 'При контакте любой план меняется.', serverTitle: 'ДОМАШНИЙ СЕРВЕР // BSS', serverText: 'Мир Дружба Жвачка — наша домашняя база. Играй где хочешь, а потом возвращайся к знакомым лицам.', philosophyTitle: 'ИГРАЙ КАК ХОЧЕШЬ', philosophyText: 'Без обязательных ежедневных заходов, форсированного сидирования и военного давления. Мы играем ради удовольствия.', vipTitle: 'VIP ПОСЛЕ ПЕРВОГО ВЫЛЕТА', vipText: 'Каждый активный участник получает бесплатный VIP-слот на серверах BSS после первого совместного вылета.', leaveTitle: 'УХОДИШЬ В УВАЛ?', leaveText: 'Сообщи офицеру в канале #увал, чтобы не попасть под периодическую чистку неактивных.',
     personnelLabel: 'ЛИЧНЫЙ СОСТАВ', active: 'АКТИВНЫХ', activeNow: 'АКТИВНО', deploymentKicker: 'Проверенный состав', rosterTitle: 'Наш <span>состав.</span>', memberCount: 'АКТИВНЫХ УЧАСТНИКОВ', leadCard: 'КОМАНДИР', memberCard: 'УЧАСТНИК', filterRoster: 'Фильтр состава', filterAll: 'Все', filterOfficers: 'Командиры', filterInfantry: 'Игроки',
-    ranksEyebrow: 'КАК МЫ ИГРАЕМ', activeNow: 'АКТИВНО', ranksTitle: 'Как мы<br>играем вместе', ranksText: 'Короткий путь от первого вылета до помощи отряду. Без строевой и лишней иерархии.',
+    requirementsKicker: 'Перед первым вылетом', requirementsTitle: 'Без лишних барьеров.<br><span>Только главное.</span>', requirementsText: 'Нам нужны надёжные напарники, а не идеальные солдаты. Вот что мы просим перед вступлением в постоянный состав.', hoursRequirement: 'часов в Squad', ageRequirement: 'лет и старше', micRequirement: 'МИКРОФОН', micRequirementText: 'готовность общаться в отряде', exceptionRequirement: 'Иногда делаем исключение для подходящего игрока. Напиши офицеру в Discord.', roleRifleman: 'Стрелок', roleMedic: 'Медик', roleBugler: 'Трубач', roleGrenadier: 'ГП', roleSniper: 'Снайпер', roleSquadLead: 'Сквадной', roleTandem: 'Тандем',
     openChannel: 'ОТКРЫТЫЙ КАНАЛ', joinKicker: 'Твоя огневая группа ждёт.', joinTitle: 'Готовы к<br><span>вылету?</span>', joinText: 'Бери лучшие переговоры, худшие шутки и готовность играть на задачу. Новички и опытные командиры отделений приветствуются.', stepOne: 'Зайди в Discord и поздоровайся.', stepTwo: 'Отправь короткую заявку ниже.', stepThree: 'Выбери первый вылет с командой.', joinCta: 'Войти в Discord', joinAside: 'ВСЕ ОТРЯДЫ<br>СТРОЯТСЯ ЗДЕСЬ', joinAsideSmall: 'ГОЛОС // ЗАЯВКА // ПЕРВЫЙ ВЫЛЕТ', footerDivision: 'КОМАНДА НОЧНЫХ ВЕДЬМ', footerTagline: 'РАДИ ОБЩЕЙ ЦЕЛИ', backToTop: 'НАВЕРХ ↑', onlineCard: 'В сети', standbyCard: 'Ожидание'
   }
 };
@@ -54,6 +54,7 @@ function renderRoster(filter = 'all') {
       <div class="card-avatar" aria-hidden="true">${initials(member.name)}</div>
       <div class="card-name">${member.name}</div>
       <div class="card-role">${member.roles[language]}</div>
+      <div class="card-details"><span>${member.type === 'officer' ? copy[language].leadCard : copy[language].memberCard}</span><span>TMNW // BSS</span></div>
     </article>
   `).join('');
 }
@@ -138,4 +139,14 @@ language = new URLSearchParams(window.location.search).get('lang') === 'en' ? 'e
 applyLanguage();
 renderRoster();
 updateCounters();
+
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('is-visible');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.14 });
+document.querySelectorAll('.reveal-on-scroll').forEach((element) => revealObserver.observe(element));
 
